@@ -4,40 +4,97 @@
     <meta charset="UTF-8">
     <title>HTML Album Cover</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      .cover-container img{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+     .cover-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .title-box{
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f2c200;
+        padding: 20px 30px;
+        z-index: 2;
+        text-align: left;
+        width: 100px;
+        overflow: hidden;
+      }
+      .title-box header{
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: black;
+        margin-bottom: 5px;
+      }
+      .title-box h4{
+        font-size: 0.5vw;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        line-height: 1.0;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+      .title-box p{
+        font-size: 5px;
+        color: black;
+        margin: 5px 0 0;
+      }
+    </style>
+
   </head>
   <body>
     <div class="wrapper">
       <div id="front" class="album">
         <div id="title-box">
 
-          <!-- Level 4 'PHARRELL WILLIAMS' Header -->
 
-          <!-- Level 2 'HAPPY' Header -->
+        <h4>PHARRELL WILLIAMS</h4>
 
-          <!-- Level 4 '| FROM DESPICABLE ME...' Header -->
+
+          <h2>HAPPY</h2>
+
+          <h4>|FROM DESPICABLE ME 2|</h4>
 
         </div>
       </div>
 
       <div id="back" class="album">
 
-        <!-- Level 3 '| FROM DESPICABLE ME...' Header -->
+        <h3>FROM DESPICABLE ME 2</h3>
 
-        <!-- Level 1 'HAPPY' Header -->
+        <h1>HAPPY</h1>
 
-        <!-- Level 3 'WRITTEN BY...' Header -->
+        <h3>WRITTEN BY PHARRELL WILLIAMS</h3>
 
-        <!-- pararaph text 'PUBLISHED BY...' -->
+        <p>PUBLISHED BY EMI APRIL MUSIC, INC. OBO ITSELF AND MORE WATERFROM NAZARETH (ASCAP) / UNIVERSAL PICTURES MUSIC (ASCAP) | BACKGROUND VOCALS PERFORMED BY RHEA DUMMETT, TREVON HENDERSON, ASHLEY L. LEE, SHAMIKA HIGHTOWER, JASMINE MURRAY AND TERRENCE ROLLE | PRODUCED BY PHARRELL WILLIAMS | RECORDED BY MIKE LARSON FOR I AM OTHER ENTERTAINMENT AT CIRCLE HOUSE STUDIOS, MIAMI, FL | ASSISTED BY MATTHEW DESRAMEAUX | DIGITAL EDITING AND ARRANGEMENT BY ANDREW COLEMAN AND MIKE LARSON FOR I AM OTHER ENTERTAINMENT | MIXED BY LESLIE BRATHWAITE AT MUSIC BOX STUDIOS, ATLANTA, GA.</p>
 
-        <!-- span text 'PHARRELLWILLIAMS.COM' -->
-
-        <!-- display the images hosted on [https://s3.amazonaws.com/learn-verified/columbia-logo.png] -->
-
-        <!-- span text 'COLUMBIARECORDS.COM' -->
+        <span>PHARRELLWILLIAMS.COM</span>
+        
+        <img src="https://s3.amazonaws.com/learn-verified/columbia-logo.png" alt="">
+        
+        <span>COLUMBIARECORDS.COM</span>
 
         <br>
 
-        <!-- display the images hosted on [https://s3.amazonaws.com/learn-verified/sony-logo.png] -->
+        <img src="https://s3.amazonaws.com/learn-verified/sony-logo.png" alt="">
 
       </div>
     </div>
